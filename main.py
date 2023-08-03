@@ -10,8 +10,6 @@ lon = "-1.6401422"
 url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+token+"&units=metric";
 meteo = requests.get(url).json()
 
-print(meteo)
-
 temperature = int(meteo["main"]["temp"])
 code = meteo["weather"][0]["icon"]
 
