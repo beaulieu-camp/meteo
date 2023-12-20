@@ -20,3 +20,4 @@ code = meteo["weather"][0]["icon"]
 
 with open("./out/index.json","w+") as file:
     file.write(json.dumps({"temperature":temperature,"code":code}))
+
